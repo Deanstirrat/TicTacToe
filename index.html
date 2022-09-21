@@ -12,6 +12,7 @@
 
 <body>
     <div class="main-container" id="mainContainer">
+        <h1 class="turn-display" id="turnDisplay"></h1>
         <div class="board-container" id="boardContent">
             <div class="board-content" id="boardContent">
                 <button class="game-boxes" id="1"></button>
@@ -29,10 +30,18 @@
     <div class="game-select-modal" id="gameSelectModal">
         <h1 style="margin: 0;">Select game mode</h1>
         <div class="player-select-container" id="playerSelectContainer">
-            <button class="single-player-button" id="singlePlayerButton"></button>
-            <button class="two-player-button" id="twoPlayerButton"></button>
+            <button class="single-player-button" id="singlePlayerButton">
+                <img src="/Users/deanstirrat/Desktop/Odin Project/JavaScript/TicTacToe/noun-users-474160.svg" class="button-image">
+            </button>
+            <button class="two-player-button" id="twoPlayerButton">
+                <img src="/Users/deanstirrat/Desktop/Odin Project/JavaScript/TicTacToe/noun-ai-3895319.svg" class="button-image">
+            </button>
         </div>
-        <button class="play-btn" id="playBtn"></button>
+        <button class="play-btn" id="playBtn">Start game!</button>
+    </div>
+    <div class="winner-modal inactive" id="winnerModal">
+        <h1 class="winner-heading" id="winnerHeading"></h1>
+        <button class="play-btn" id="continueBtn">Continue</button>
     </div>
     <div class="overlay" id="overlay"></div>
 </body>
